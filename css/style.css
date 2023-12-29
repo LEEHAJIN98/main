@@ -1,0 +1,564 @@
+@charset "utf-8";
+
+
+/*-------------------------------------body-------------------------------------*/
+
+body{
+    /*반응형 웹일때 사용가능*/
+    width: 100%;
+    padding: 0%;
+    margin: 0%;
+}
+
+
+/*-------------------------------------header-------------------------------------*/
+
+header ul{
+    font-family: 'Titan One', sans-serif;
+    position: fixed;
+    top: 0px;
+    z-index: 1;
+    width: 100%;
+
+}
+
+header ul{
+list-style: none;
+font-size: 32px;
+float: left;
+background-color: rgb(33, 92, 144);
+width: 100%;
+padding: 0%;
+margin: 0%;
+text-align: center;
+height: 65px;
+}
+
+header ul li{
+    display: inline;
+    margin-right: 70px;
+    margin-left: 70px;
+    color: rgb(223, 235, 248);
+    line-height: 65px;
+}
+
+/*article div .panel{
+    position: relative;
+}
+
+#wrap { width:1450px; margin:30px auto; position:relative; }*/
+header ul li a { text-decoration:none; 
+    color:rgb(255, 255, 255);
+    font-size: 24px;
+    font-weight:normal;}
+.글씨:hover { color:rgb(253, 221, 251);}
+
+        
+/*#tab1 div { float:left; padding:0; margin:10px; margin-left: 150px;}
+#tab1 div p { line-height:200px;}
+#tab1 div p:first-child { color:blue; font-size:120%;}
+
+#tab2 div { float:left; padding:0; margin:0;}
+#tab2 div p { line-height:12px;}
+#tab2 div p:first-child { color:blue; font-size:120%;}
+
+#tab3 div { float:left; padding:0; margin:0;}
+#tab3 div p { line-height:12px;}
+#tab3 div p:first-child { color:blue; font-size:120%;}*/
+
+
+
+/*-------------------------------------main-------------------------------------*/
+
+main{
+    background-image: url('../img/구름이미지.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 928px;
+    display: flex;
+    justify-content: center;
+}
+
+main #포트폴리오글씨{
+   /* position: absolute;*/
+    
+    margin-left: 90px;
+    margin-top: 160px;
+    width: 810px;
+    height: 580px;
+}   
+
+
+/*-------------------------------------2번-------------------------------------*/
+.프로필{
+    margin-left: 80px;
+    margin-right: 80px;
+}
+
+
+/*-------------------------------------div-------------------------------------*/
+.프로필글씨{
+    /*position: relative; /*앞에서 앱솔루트를 사용했기 때문에 뒤에 쭉쭉 애들은 릴레이티브로 사용해야함
+    margin-left: 650px;*/
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: 110px;
+}
+
+.프로필글씨 img{
+    vertical-align: bottom; /*이미지랑 글씨랑 줄간격 맞춰줄 수 있음*/
+}
+
+.프로필글씨 span{
+    font-family: 'Titan One', sans-serif;
+    color: rgb(11, 75, 127);
+    text-align: center;
+    font-size: 55px;
+    text-shadow : 3px 3px gray;   
+}
+
+.빈공간{
+    margin: 0px;
+}
+
+/*-------------------------------------aside-------------------------------------*/
+aside{
+/*position: relative;*/
+    justify-content: space-around;
+    width: 100%;
+    display: flex;
+    margin-bottom: 100px;
+}
+
+/*----------------프로필 이미지(핑크)----------------*/
+aside div img{
+    /*display: inline-block;*/
+   margin-top: 50px;
+   /*height: 900px;*/
+ }
+
+aside div h1{
+    font-weight: bold; 
+    font-size: 25px;
+}
+
+aside ul{
+    list-style: none;
+}
+
+aside ul li{
+    line-height: 30px;
+    text-align:start;
+    font-size: 18px;
+    color: rgb(77, 77, 77);
+    /*margin-top: 5px;
+    margin-bottom: 5px;*/
+}
+
+aside div hr{
+    width: 440px;
+    margin-left: 15px;
+}
+
+aside div h1{
+    margin-top: 45px;
+    margin-left : 40px;
+    color: rgb(60, 60, 60);
+}
+
+
+aside div .어바웃{
+    /*margin-top: 100px;
+    margin-right: 500px;*/
+   
+  }
+  
+  /*aside div .어바웃 ul .공간{
+      margin-bottom: 600px;
+  }*/
+  
+
+/*-----------------프로필 = 어바웃 안에 글씨----------------*/
+/*aside .오른쪽{
+    margin-right: 50px;
+}*/
+
+aside ul li .이름{
+    margin-left: 191px;
+}
+
+aside ul li .생일{
+    margin-left: 235px;
+}
+
+aside ul li .번호{
+    margin-left: 209px;
+}
+
+aside ul li .이메일{
+    margin-left:199px;
+}
+
+aside ul li .인스타{
+    margin-left: 272px;
+}
+
+aside ul li .취미{
+    margin-left: 219px;
+}
+
+
+/*-----------------프로필 = 교육 안에 글씨----------------*/
+#교육{
+    margin-top: 180px;
+}
+
+aside ul li .고등학교{
+    margin-left: 182px;
+}
+
+aside ul li .대학교{
+    margin-left: 102px;
+}
+
+aside ul li .학원{
+    margin-left: 97px;
+}
+
+aside ul li .수료{
+    margin-left: 177px;
+}
+
+
+/*-----------------프로필 = 스킬 안에 이미지----------------*/
+aside div ul li img{
+    margin: 0px;
+    
+}
+
+
+/*-----------------프로필 = 자격증 안에 글씨----------------*/
+#자격증{
+    margin-top: 81px;
+}
+
+aside ul li .운전면허{
+    margin-left: 110px;
+}
+
+aside ul li .포토샵{
+    margin-left: 195px;
+}
+
+
+
+
+/*-------------------------------------section-------------------------------------*/
+section{
+    height: 2400px;  /*높이를 지정해줘야 포트폴리오 글씨의 위치를 지정해줄 수 있음*/
+    /*display: flex;*/
+    justify-content: center;
+    background-color: rgb(211, 233, 243);
+    margin-top: 150px;
+    margin-bottom: 0px;
+}
+
+.경력글씨{
+    /*position: relative; /*앞에서 앱솔루트를 사용했기 때문에 뒤에 쭉쭉 애들은 릴레이티브로 사용해야함
+    margin-left: 650px;*/
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: 120px;
+
+    
+}
+
+.경력오글씨 img{
+    vertical-align: bottom; /*이미지랑 글씨랑 줄간격 맞춰줄 수 있음*/
+}
+
+.경력글씨 span{
+    font-family: 'Titan One', sans-serif;
+    color: rgb(11, 75, 127);
+    text-align: center;
+    font-size: 55px;
+    text-shadow : 3px 3px gray;   
+}
+
+
+section .경력{
+    background-image: url('../img/막대기10.png');
+    /*background-size:auto;*/
+    background-repeat: no-repeat;
+    height: 3000px;
+    margin-top: 10px;
+    /*display: flex;*/
+    width: 100%;
+    justify-content: center;
+}
+
+section div .이미지{
+    margin-top: 150px;
+    margin-right: 235px;
+    width: 1200px;
+}
+
+section div .어반로지{
+    margin-left: 228px;
+}
+
+/*.왼쪽{
+    animation-name: hh;
+    animation-duration: 5s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes hh {
+    0% {left: 0px;}
+    50% {left: 300px;}
+    100% {left: 50px;}
+}*/
+
+
+
+@keyframes fadeInLeft {
+    from {
+        opacity: 0;
+        transform: translate3d(-100%, 0, 0);
+    }
+    to {
+        opacity: 1;
+        transform: translateZ(0);
+    }
+    }
+    @keyframes fadeInRight {
+    from {
+        opacity: 0;
+        transform: translate3d(100%, 0, 0);
+    }
+    to {
+        opacity: 1;
+        transform: translateZ(0);
+    }
+    }
+
+.왼쪽1 {
+    position: relative;
+    animation-name: fadeInLeft;
+    animation-duration: 4s;
+}
+.오른쪽1 {
+    position: relative;
+    animation-name: fadeInRight;
+    animation-duration: 4s;
+    animation-delay: 3s;
+}
+.왼쪽2 {
+    position: relative;
+    animation-name: fadeInLeft;
+    animation-duration: 4s;
+    animation-delay: 4s;
+
+}    
+.오른쪽2 {
+    position: relative;
+    animation-name: fadeInRight;
+    animation-duration: 4s;
+    animation-delay: 6s;
+}
+
+
+/*-------------------------------------article-------------------------------------*/
+
+article div ul{
+    list-style: none;
+    display: flex;
+    /*margin-left: 300px;*/
+}
+
+.포트폴리오글씨{
+    /*position: relative; /*앞에서 앱솔루트를 사용했기 때문에 뒤에 쭉쭉 애들은 릴레이티브로 사용해야함
+    margin-left: 650px;*/
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: 130px;
+    margin-bottom: 25px;
+}
+
+.포트폴리오글씨 img{
+    vertical-align: bottom; /*이미지랑 글씨랑 줄간격 맞춰줄 수 있음*/
+}
+
+.포트폴리오글씨 span{
+    font-family: 'Titan One', sans-serif;
+    color: rgb(11, 75, 127);
+    text-align: center;
+    font-size: 55px;
+    text-shadow : 3px 3px gray;
+    
+}
+
+article .포트폴리오센터{
+    justify-content: center;
+    display: flex;
+}
+
+/*article div .포트폴리오_목차{
+    margin-top: 50px;
+    margin-left: 50px;
+}*/
+
+/*article div ul li{
+    font-size: 20px;
+    font-weight: bold;
+    color: rgb(61, 61, 61);
+    /*margin-top: 3px;
+}
+
+article div ul .카페옆공간{
+    margin-left: 65px;
+}*/
+
+
+/*article div ul li span{
+    margin-left: 30px;
+    margin-right: 30px;
+}*/
+
+/*article div .블랙업{
+    margin-top: 80px;
+    margin-left: 255px;
+    margin-bottom: 200px;
+}*/
+
+
+article div .panel{
+    position: relative;
+}
+
+#wrap { width:1200px; margin:0px auto; position:relative; }
+a { text-decoration:none; 
+    color:rgb(0, 0, 0);
+    font-size: 18px;
+    font-weight: bold;}
+a:hover { color:rgb(255, 255, 255);}
+ul { list-style:none; padding:0;}
+    
+ul#tab li { float:left; width:2000px; padding:15px 0; 
+        margin-left: 10px; margin-right: 10px; 
+        background-color:rgb(188, 216, 146); text-align:center;
+        text-indent:5px; border:1px solid rgb(255, 255, 255); border-radius: 20px; 
+        box-sizing:border-box; }
+        
+ul#tab li:a { padding:5px 5px;}		
+ul#panel li{ margin-top: 90px;
+    width:1000px; height:600px; 
+    /*border:1px solid black; background-color:pink;*/ 
+    box-sizing:border-box; padding:0;
+    position:absolute; top:40px; left:0;	 }
+        
+#tab1 div { float:left; padding:0; margin:10px; margin-left: 10px;}
+#tab1 div p { line-height:200px;}
+#tab1 div p:first-child { color:blue; font-size:120%;}
+
+#tab2 div { float:left; padding:0; margin:0;}
+#tab2 div p { line-height:12px;}
+#tab2 div p:first-child { color:blue; font-size:120%;}
+
+#tab3 div { float:left; padding:0; margin:0;}
+#tab3 div p { line-height:12px;}
+#tab3 div p:first-child { color:blue; font-size:120%;}
+
+/*4~7번은 내가 스스로 만들어야함*/
+
+/*-------------------------------------footer-------------------------------------*/
+footer{
+    /*background-image: url('../img/에필로그배경.png');
+    background-repeat: no-repeat;*/
+    width: 100%;
+    position: relative;
+    margin-top: 620px;
+    background-color: rgb(236, 248, 255);
+}
+
+footer .에필로그글씨{
+    font-family: 'Titan One', sans-serif;
+    color: rgb(11, 75, 127);
+    text-align: center;
+    font-size: 55px;
+    text-shadow : 3px 3px gray;
+    margin-top: 150px;
+    margin-bottom: 30px;
+}
+
+footer .에필로그글씨 img{
+    vertical-align: bottom; /*이미지랑 글씨랑 줄간격 맞춰줄 수 있음*/
+}
+
+footer .프로필이미지{
+    margin-left: 200px;
+    margin-top: 50px;
+}
+
+footer .이미지글씨{
+    display: flex;
+
+}
+
+footer div ul{
+    list-style: none;
+    margin-top: 200px;
+    margin-left: 60px;
+}
+
+footer div ul #연락처{
+    margin-top: 20px;
+}
+
+footer div ul li{
+    margin-bottom : 10px;
+    letter-spacing: 2px;
+    font-weight: bold;
+    color: rgb(78, 78, 78);
+    font-size: 22px;
+    /*-webkit-text-stroke: 0.5px grey;
+    font-family: Sharing Godic;*/
+}
+
+footer div ul li .하트{
+    color: rgb(244, 154, 194);
+}
+
+footer div ul li span{
+    color: rgb(137, 218, 105);
+}
+
+footer .하단{
+    display: flex;
+    background-image: url('../img/하단박스(1663).png');
+    background-repeat: no-repeat;
+    margin-top: 60px;
+    height: 140px;*/
+}
+
+footer .하단 ul{
+    list-style: none;
+    margin: 0px;
+    margin-top: 50px;
+}
+
+footer .하단 ul li{
+    font-size: 14px;
+    color: white;
+    margin-left: 255px;
+}
+
+footer .하단 .하단글씨 li{
+    font-size: 14px;
+    /*text-align: center;
+    margin-left: 220px;*/
+}
